@@ -1,14 +1,12 @@
 import express from "express";
 import { members } from "./Members.js";
+import  moment  from "moment";
+import { logger } from "./middleware/logger.js";
 
 const app = express();
 const PORT = process.env.PORT || 8000;
 
-// creating middleware
-const logger = (req, res, next) => {
-     console.log(`${req.protocol}://${req.get("host")}${req.originalUrl}`);
-     next();
-};
+
 
 // Init middleware
 app.use(logger);
