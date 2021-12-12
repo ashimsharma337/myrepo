@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 8000;
 
 
 app.get("/", (req, res) => {
-    res.send("<h1>Welcome to the home page.</h1>");
+    res.sendFile(process.cwd()+"/Public/index.html");
 });
 
 app.listen(PORT, () => {
