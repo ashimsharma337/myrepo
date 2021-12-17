@@ -3,7 +3,7 @@ const router = express.Router();
 
 
 router.get("/", (req, res) => {
-      res.send("Welcome to the browser.")
+      res.render("welcome");
 });
 
 

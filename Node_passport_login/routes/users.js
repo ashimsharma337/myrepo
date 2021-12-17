@@ -3,13 +3,13 @@ const router = express.Router();
 
 // Login page
 router.get("/login", (req, res) => {
-      res.send("Welcome to the login page.")
+      res.render("login")
 });
 
 
 // Register page
 router.get("/register", (req, res) => {
-    res.send("Welcome to the register page.")
+    res.render("register");
 });
 
 
