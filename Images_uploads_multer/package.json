@@ -1,0 +1,11 @@
+{
+  "name": "images_uploads_multer",
+  "version": "1.0.0",
+  "description": "Example of image uploading in node",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
