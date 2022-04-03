@@ -11,6 +11,10 @@ export class AppComponent {
   getName () {
     return this.name;
   }
+  callMe(){
+    alert ("You just call a function"+" "+this.newName);
+  }
+  newName= "ashim";
   obj={
     name: "Peter",
     age: 20
